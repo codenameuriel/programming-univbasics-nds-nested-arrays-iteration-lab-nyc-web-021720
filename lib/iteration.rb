@@ -32,6 +32,7 @@ def find_greater_pair(src)
       answer << sub_answer[0]
     else
       answer << sub_answer[1]
+    end
     row_index += 1
   end
   return answer
