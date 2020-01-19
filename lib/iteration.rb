@@ -40,7 +40,7 @@ end
 
 def total_even_pairs(src)
   answer = []
-  root_index = 0
+  row_index = 0
   while row_index < src.length do
     element_index = 0
     evens = []
