@@ -51,7 +51,8 @@ def total_even_pairs(src)
         element_index += 1
     end
     if evens.length == 2 
-    answer << evens[0] + evens[1]
+      answer << evens[0] + evens[1]
+    end
     row_index += 1 
   end
   return answer
