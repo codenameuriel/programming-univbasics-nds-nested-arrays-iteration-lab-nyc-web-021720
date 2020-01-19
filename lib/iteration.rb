@@ -23,6 +23,7 @@ def find_greater_pair(src)
   row_index = 0 
   while row_index < src.length do
     element_index = 0
+    sub_answer = []
     while element_index < src[row_index].length do
        x = src[row_index][0]
        if x < src[row_index][element_index]
