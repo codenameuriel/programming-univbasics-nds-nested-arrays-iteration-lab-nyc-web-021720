@@ -25,15 +25,13 @@ def find_greater_pair(src)
     element_index = 0
     sub_answer = []
     while element_index < src[row_index].length do
-       x = src[row_index][0]
-       if x < src[row_index][element_index]
-        x = src[row_index][element_index]
-        answer << x
-       else
-        answer << x 
-       end
+      sub_answer << src[row_index][element_index]
        element_index += 1
     end
+    if sub_answer[0] > sub_answer[1]
+      answer << sub_answer[0]
+    else
+      answer << sub_answer[1]
     row_index += 1
   end
   return answer
