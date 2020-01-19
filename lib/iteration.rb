@@ -5,9 +5,12 @@ def join_ingredients(src)
       element_index = 0 
       string = "I love "
       while element_index < src[row_index].length do
-        string += "#{src[row_index][element_index]}"
+        if element_index == 0 
+            string += "#{src[row_index][element_index]} and "
+        else
+            string += "#{src[row_index][element_index]} on my pizza"
+        end
         element_index += 1 
-        string += " and #{src[row_index][element_index]} on my pizza"
       end
       new_array << string
       row_index += 1
