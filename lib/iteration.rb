@@ -1,21 +1,21 @@
 def join_ingredients(src)
-    new_array = []
-    row_index = 0
-    while row_index < src.length do 
-      element_index = 0 
-      string = "I love "
-      while element_index < src[row_index].length do
-        if element_index == 0 
-            string += "#{src[row_index][element_index]} and "
-        else
-            string += "#{src[row_index][element_index]} on my pizza"
-        end
-        element_index += 1 
+  new_array = []
+  row_index = 0
+  while row_index < src.length do 
+    element_index = 0 
+    string = "I love "
+    while element_index < src[row_index].length do
+      if element_index == 0 
+        string += "#{src[row_index][element_index]} and "
+      else
+        string += "#{src[row_index][element_index]} on my pizza"
       end
-      new_array << string
-      row_index += 1
+      element_index += 1 
     end
-    return new_array 
+    new_array << string
+    row_index += 1
+  end
+  return new_array 
 end
 
 def find_greater_pair(src)
