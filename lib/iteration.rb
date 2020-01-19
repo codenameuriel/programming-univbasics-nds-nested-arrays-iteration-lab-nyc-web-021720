@@ -52,6 +52,7 @@ def total_even_pairs(src)
     end
     if evens.length == 2 
       total += evens[0] + evens[1]
+    end
     row_index += 1 
   end
   return total
